@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMShop</title>
+
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"-->
+    <!--          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="-->
+    <!--          crossorigin="anonymous" referrerpolicy="no-referrer"/>-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+    <div class="container">
+        <div class="leftHeader">
+            <div class="headerWrap">
+                <div class="headerBars">
+                </div>
+                <div class="headerMini hide">
+                    <div class="headerMiniTop">
+                        <img src="img/header/closeButton.png" class="headerMiniImage" alt="">
+                        <div>Меню</div>
+                    </div>
+
+                    <ul class="headerMiniInfo">
+                        <li><a href="#">Прайс</a></li>
+                        <li><a href="#">Ремонт</a></li>
+                        <li><a href="#">Хостинг</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <img src="img/header/logo.svg" alt="" class="logoHeader">
+            <ul class="headerInfo">
+                <li><a href="#">Прайс</a></li>
+                <li><a href="#">Ремонт</a></li>
+                <li><a href="#">Хостинг</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="rightHeader">
+            <div class="phoneWrapper">
+                <img src="img/header/phoneHeader.svg" alt="">
+                <div class="phoneNumberHeader">+7 (495) 202-10-54</div>
+            </div>
+            <img src="img/header/TGHeader.svg" alt="">
+            <img src="img/header/whatsAppHeader.svg" alt="">
+        </div>
+    </div>
+</nav>
+<div id="cr-widget-marquee"
+     data-coins="bitcoin,ethereum,tether,ripple,cardano"
+     data-theme="light"
+     data-show-symbol="true"
+     data-show-icon="true"
+     data-show-period-change="true"
+     data-period-change="24H"
+     data-api-url="https://api.cryptorank.io/v0"
+     class="runningLine">
+    <a href="https://cryptorank.io">Coins by Cryptorank</a>
+    <script src="https://cryptorank.io/widget/marquee.js"></script>
+</div>
+
+<div class="slider">
+    <div class="sliderItem">
+        <img src="img/slider/sliderImage.png" alt="" class="sliderImage">
+        <div class="sliderTextWrapper">
+            <div class="sliderName">Bitmain Antminer Z15</div>
+            <div class="sliderText">Самый мощный асик для добычи Z-Cash в 2022 году</div>
+            <button class="sliderBtn">Подробно</button>
+        </div>
+    </div>
+    <div class="sliderLeftArrow"></div>
+    <div class="sliderRightArrow"></div>
+</div>
+
+
+<div class="featured">
+    <div class="container">
+        <div class="featuredTopWrap">
+            <div class="featuredSearchLine">
+                <input type="text" placeholder="Найдите свои товары здесь">
+                <img src="img/featured/searchFeatured.svg" alt="">
+            </div>
+            <div class="featuredItemWrap">
+                <div class="featuredChooseItem">Майнеры</div>
+                <div class="featuredChooseItem">Комплектующие</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="items container">
+    <div class="itemFilter">
+        <div class="filterWrap">
+            <h1>Фильтр</h1>
+            <img src="img/general/arrowDown.svg" alt="">
+        </div>
+        <div class="itemFilterBody">
+            <div class="itemChunk">
+                <h1 class="itemLabel">Доступность</h1>
+                <input type="checkbox" name="available" id="checkbox-avail">
+                <label for="checkbox-avail">Наличие</label>
+
+                <input type="checkbox" name="available" id="checkbox-pre_ord">
+                <label for="checkbox-pre_ord">Предзаказ</label>
+            </div>
+            <div class="itemChunk">
+                <h1 class="itemLabel">Производители</h1>
+
+                <input type="checkbox" name="manufacturers" id="bit">
+                <label for="bit">Bitmain</label>
+
+                <input type="checkbox" name="manufacturers" id="canaan">
+                <label for="canaan">Canaan Avalon</label>
+
+                <input type="checkbox" name="manufacturers" id="ebang">
+                <label for="ebang">Ebang</label>
+
+                <input type="checkbox" name="manufacturers" id="innosil">
+                <label for="innosil">Innosilicon</label>
+
+                <input type="checkbox" name="manufacturers" id="whatsminer">
+                <label for="whatsminer">Whatsminer</label>
+
+
+            </div>
+            <div class="itemChunk">
+                <h1 class="itemLabel">Алгоритм</h1>
+
+                <input type="checkbox" name="manufacturers" id="sha">
+                <label for="sha">SHA-256</label>
+
+                <input type="checkbox" name="manufacturers" id="etash">
+                <label for="etash">Ethash</label>
+
+            </div>
+            <div class="itemRange">
+                <h1 class="itemLabel">Цена</h1>
+
+
+                <div class="slider_container">
+                    <div class="slider-track"></div>
+                    <input type="range" min="0" max="1000000" value="0" id="slider-1" oninput="slideOne()">
+                    <input type="range" min="0" max="1000000" value="1000000" id="slider-2" oninput="slideTwo()">
+                </div>
+                <div class="values">
+                    <div class="rangeLeft">
+                        <span id="range1">
+                            0
+                        </span>
+                    </div>
+                    <div class="rangeRightWrap">
+                        <div class="rangeRight">
+                            <span id="range2">
+                                1000000
+                            </span>
+                        </div>
+                        <div class="rangeCurrency">
+                            ₽
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item__board">
+        <div class="item__topWrap">
+            <div class="item__selectedText">Отображение 1–8 из 119</div>
+            <div class="item__sortWrap">
+                <div class="item__sort">
+                    <div class="item__sortText">Исходная сортировка</div>
+                    <img src="img/general/arrowDown.svg" alt="">
+                </div>
+                <div class="item__sortBody hide">
+                    <ul class="item__sortChoose">
+                        <li>Cначала дешевле</li>
+                        <li>Сначала дороже</li>
+                        <li>По возрастанию прибыльности</li>
+                        <li>По убыванию прибыльности</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item__catalog">
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+            <div class="item__productCart">
+                <img src="img/catalog/item.jpg" alt="" class="item__productImg">
+                <div class="item__productName">INNOSILICON T2T HF+ 33Th</div>
+                <ul class="item__productDesc">
+                    <li>sha-256</li>
+                    <li>1033Th</li>
+                    <li>2700W</li>
+                </ul>
+                <div class="item__productText">Цену можно уточнить по телефону</div>
+                <div class="item__productPrice">от 200 000 р</div>
+            </div>
+        </div>
+        <div class="item__pagination">
+            <div class="item__leftArrow">
+                <img src="img/products/leftArrow.svg" alt="" class="item__leftArrowImg">
+            </div>
+            <div class="item__currencyPage">
+                <span>2</span>
+            </div>
+            <div class="item__rightArrow">
+                <img src="img/products/rightArrow.svg" alt="" class="item__rightArrowImg">
+            </div>
+        </div>
+        <div class="item__bottomText">
+            За показатель прибыльности мы ответственности не несём
+        </div>
+    </div>
+
+</div>
+
+<div class="repair container">
+    <div class="repairNav">
+        <div class="repairTopWrap">
+            <div class="repairItemWrap">
+                <div class="repairChooseItem active" data-name="hash">Ремонт Хеш-плат</div>
+                <div class="repairChooseItem" data-name="powerUnit">Ремонт Блока питания</div>
+            </div>
+        </div>
+    </div>
+    <div class="repairContainer" data-name="hash">
+        <div class="repairItem">
+            <div class="repairTextWrap">
+                <div class="repairName">Ремонт Хеш-плат в Москве</div>
+                <div class="repair__descWrap">
+                    <img src="img/repair/RepairHash-plata.png" alt="RepairHash-plata" class="repairImage">
+                    <div class="repairTextWrap">
+                        <div class="repairTop">Дианостика / Ремонт / Настройка</div>
+                        <div class="repairDescription">
+                            ОЦЕНИМ ОБЪЕМ РАБОТ ЗА 20 МИНУТ И
+                            ПРЕДЛОЖИМ ЛУЧШУЮ ЦЕНУ В
+                            МОСКВЕ!
+
+                        </div>
+                        <div class="repairPrice">
+                            <p>Bitmain Antminer - от 2000₽</p>
+                            <p>Innosilicon - от 5000₽</p>
+                            <p>Whatsminer - от 7000₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="RepairBtnWrap">
+                <button class="СonsultationBtn">Получить консультацию</button>
+                <button class="RepairTableBtn">Таблица ремонта</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="repairContainer hide" data-name="powerUnit">
+        <div class="repairItem">
+            <div class="repairTextWrap">
+                <div class="repairName">Ремонт Блока Питания в Москве</div>
+                <div class="repair__descWrap">
+                    <img src="img/repair/BlockPower.png" alt="BlockPower" class="repairImage repairImage_small">
+                    <div class="repairTextWrap">
+                        <div class="repairTop">Дианостика / Ремонт</div>
+                        <div class="repairDescription">
+                            Основные причины поломки Блока питания!
+
+                        </div>
+                        <ul class="repairPU">
+                            <li>Неисправность аккумулятора</li>
+                            <li>Внешние повреждения</li>
+                            <li>Перепады напряжения</li>
+                            <li>Дешевые материалы</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="RepairBtnWrap">
+                <button class="СonsultationBtn">Получить консультацию</button>
+                <button class="RepairTableBtn">Таблица ремонта</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
