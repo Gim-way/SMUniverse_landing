@@ -1143,7 +1143,7 @@ input[type="range"]:active::-webkit-slider-thumb {
 .repairPrice {
   line-height: 11px;
   margin-top: 15px;
-  @media (min-width: 1200px) and (max-width: 1599px){
+  @media (min-width: 1200px) and (max-width: 1599px) {
     margin-top: 71px;
     line-height: 20px;
   }
@@ -1233,9 +1233,76 @@ input[type="range"]:active::-webkit-slider-thumb {
   }
 }
 
+
+.bottom {
+  padding: 0 15px;
+  box-sizing: border-box;
+  width: 100vw;
+
+  .bottom__item {
+    margin-top: 20px;
+    position: relative;
+
+
+    .bottom__imgWrap {
+      position: relative;
+
+
+      .bottom__image {
+        border-radius: 10px;
+
+        width: 100%;
+        height: 480px;
+        object-fit: cover;
+        object-position: -700px top;
+      }
+
+      .bottom__imgDark {
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(179.56deg, #060606 25.91%, rgba(6, 6, 6, 0) 99.66%);
+        opacity: 0.8;
+      }
+    }
+
+    .bottom__wrapperInfo {
+      position: absolute;
+      padding: 0 30px;
+      box-sizing: border-box;
+      top: 35px;
+    }
+
+    .bottom__textWrap {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .bottom__name {
+        font-size: 35px;
+        margin-bottom: 30px;
+      }
+
+      .bottom__text {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+
+  }
+}
+
+
 .repairImage_small {
-  width: 40% !important;
-  height: 40% !important;
+  @media (min-width: 768px) {
+    width: 40% !important;
+    height: 40% !important;
+  }
 }
 
 .active {
