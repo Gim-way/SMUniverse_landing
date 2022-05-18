@@ -10,9 +10,6 @@ body {
     text-decoration: none;
   }
 }
-p{
-  padding: 20px;
-}
 
 nav {
   background: #1A201E;
@@ -97,6 +94,7 @@ nav {
           display: flex;
           flex-direction: column;
           text-align: center;
+          padding: 0;
         }
 
 
@@ -108,6 +106,9 @@ nav {
         .headerMiniInfo li a {
           font-size: 28px;
           color: #C5E7DE;
+          &:hover{
+            color:#00FFCB;
+          }
 
         }
       }
@@ -145,7 +146,9 @@ nav {
           font-weight: 500;
           font-size: 23px;
           color: #C5E7DE;
-
+          &:hover{
+            color:#00FFCB;
+          }
 
         }
 
@@ -309,11 +312,19 @@ nav {
         line-height: 26px;
         width: 244px;
         height: 60px;
-        background: radial-gradient(235.11% 1798.17% at -5.54% -135.11%, #106466 0%, #0D5052 38.54%, #000000 100%);
+        background: linear-gradient(94.41deg, #106466 7.36%, #000000 100%);
         border: 1px solid #00FFCB;
         border-radius: 94px;
         padding: 17px 75px;
         margin-top: 25px;
+        transition-duration: 0.1s;
+        cursor: pointer;
+
+        &:hover{
+          background: linear-gradient(94.41deg, #106466 7.36%, #000000 100%);
+          border: 1px solid  #106466;
+          box-shadow: 0 2px 5px #333333;
+        }
 
         @media (min-width: 768px) {
           align-self: flex-start;

@@ -11,10 +11,19 @@
   border: 1px solid #00FFCB;
   border-radius: 94px;
   padding: 17px 0;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  
+  &:hover{
+    background: linear-gradient(94.41deg, #106466 7.36%, #000000 100%);
+    border: 1px solid  #106466;
+    box-shadow: 0 2px 5px #333333;
+  }
 
   @media (min-width: 768px) {
     align-self: flex-start;
     font-size: 20px;
     width: 288px;
   }
+
 }
