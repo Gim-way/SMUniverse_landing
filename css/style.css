@@ -1029,6 +1029,7 @@ input[type="range"]:active::-webkit-slider-thumb {
   color: #FFFFFF;
   text-align: center;
   width: 100%;
+  cursor: pointer;
 }
 
 .item__catalog .item__productCart .item__productImg {
@@ -1541,23 +1542,30 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .bottom {
   padding: 0 15px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100vw;
 }
+
 .bottom .bottom__item {
   margin-top: 20px;
   position: relative;
 }
+
 .bottom .bottom__item .bottom__imgWrap {
   position: relative;
 }
+
 .bottom .bottom__item .bottom__imgWrap .bottom__image {
   border-radius: 10px;
   width: 100%;
   height: 480px;
-  object-fit: cover;
-  object-position: -700px top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: -700px top;
+     object-position: -700px top;
 }
+
 .bottom .bottom__item .bottom__imgWrap .bottom__imgDark {
   border-radius: 10px;
   position: absolute;
@@ -1568,23 +1576,37 @@ input[type="range"]:active::-webkit-slider-thumb {
   background: linear-gradient(179.56deg, #060606 25.91%, rgba(6, 6, 6, 0) 99.66%);
   opacity: 0.8;
 }
+
 .bottom .bottom__item .bottom__wrapperInfo {
   position: absolute;
   padding: 0 30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   top: 35px;
 }
+
 .bottom .bottom__item .bottom__textWrap {
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .bottom .bottom__item .bottom__textWrap .bottom__name {
   font-size: 35px;
   margin-bottom: 30px;
 }
+
 .bottom .bottom__item .bottom__textWrap .bottom__text {
   font-size: 20px;
   margin-bottom: 20px;

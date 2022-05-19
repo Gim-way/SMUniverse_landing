@@ -815,6 +815,7 @@ input[type="range"]:active::-webkit-slider-thumb {
     color: #FFFFFF;
     text-align: center;
     width: 100%;
+    cursor:pointer;
 
     .item__productImg {
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
